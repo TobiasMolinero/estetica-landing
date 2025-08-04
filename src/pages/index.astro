@@ -1,16 +1,24 @@
 ---
-import Turnos from '../components/Turnos';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
 import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+// import ModalConfirm from '../components/ModalConfirm.tsx';
+import FormConsult from '../components/FormConsult.tsx';
+import Turnos from '../components/Turnos.tsx';
+// import AlertConfirm from '../components/AlertConfirm.tsx';
+// import ModalCancel from '../components/ModalCancel.tsx';
 ---
 
 <Layout title='Ambar Glow' description='Ambar Glow estetica'>
-	<main>
-		<Header />
+	<main class="min-h-screen bg-pink-50">
+		<Header />	
 		<Hero />
-		<section class="px-8 flex justify-center items-center gap-x-10">
-			<Turnos client:load/>
-		</section>
+		<Turnos client:load />
+		<!-- <ModalConfirm /> -->
+		<FormConsult />
+		<!-- <AlertConfirm /> -->
+		<!-- <ModalCancel /> -->
+		<Footer />
 	</main>
 </Layout>

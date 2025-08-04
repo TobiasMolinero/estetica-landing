@@ -19,7 +19,7 @@ const { title, description }: Props = Astro.props;
 		<meta name="description" content={description} />
 		<title>{title}</title>
 	</head>
-	<body class="bg-amber-50">
+	<body>
 		<slot />
 	</body>
 </html>
@@ -47,7 +47,7 @@ const { title, description }: Props = Astro.props;
 		font-size: 1.5rem;
 	}
 
-	span, p, a, li, button {
+	p, a, li, button {
 	    font-family: 'Montserrat', sans-serif;
 		font-size: 1rem;
 	}

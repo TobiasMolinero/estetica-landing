@@ -1,15 +1,19 @@
 ---
 import Nav from './Nav.astro';
-import Button from './Button.astro';
+// import Button from './Button.astro';
 ---
 
-<header class="bg-amber-200 flex justify-between items-center p-4 2xl:justify-around xl:gap-x-8">
-    <div>
-        <img src="" alt="Logo Ambar Glow" />
+<header class="bg-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-6">
+            <div>
+                <img src="" alt="Logo Ambar Glow" />
+            </div>
+            <Nav />
+        </div>
     </div>
-    <Nav />
-    <div class="flex gap-x-4">
+    <!-- <div class="flex gap-x-4">
         <Button>Reservar turno</Button>
         <Button style='secondary'>Contactanos</Button>
-    </div>
+    </div> -->
 </header>
