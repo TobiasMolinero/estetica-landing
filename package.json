@@ -12,6 +12,7 @@
     "@astrojs/react": "^4.3.0",
     "@tailwindcss/vite": "^4.1.11",
     "astro": "^5.12.8",
+    "axios": "^1.11.0",
     "flatpickr": "^4.6.13",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
